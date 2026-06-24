@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/stompjs@2.3.3/lib/stomp.min.js"></script>
+     <script src="/js/main.js"></script>
+     <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+<body>
+
+<h1>Live-Chat Application</h1>
+
+<!-- Login Page -->
+<div id="us">
+    <h2>Chat Room</h2>
+
+    <input type="text" id="user" placeholder="Enter your name">
+
+    <button onclick="connect()">Connect</button>
+</div>
+
+<!-- Chat Room -->
+<div id="block" style="display:none;">
+
+  <h2 id="ch">Live Chat</h2>
+  <div id="all">
+    <input
+      type="text"
+      id="messageInput"
+      placeholder="Type your message..."
+    >
+    <button onclick="sendMessage()">Send</button>
+  </div>
+    
+
+    
+
+    <ul id="messageList"></ul>
+
+</div>
+
+</body>
+</html>
